@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Portofolio Saya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Portofolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="training.html">Hasil Latihan</a></li>
+          <li>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+              🌙 Dark Mode
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Content -->
+    <div class="page active">
+      <div class="container">
+        <h1 class="page-title">Tentang Saya</h1>
+        <p class="page-subtitle">Kenali saya lebih dekat</p>
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Halo! 👋</h2>
+            <p>
+              Saya adalah seorang web developer yang bersemangat dalam
+              menciptakan pengalaman digital yang menarik dan fungsional. Dengan
+              pengalaman dalam HTML, CSS, dan JavaScript, saya selalu berusaha
+              untuk belajar teknologi baru dan meningkatkan skill saya.
+            </p>
+
+            <h2>Pengalaman 💼</h2>
+            <p>
+              Saya telah mengerjakan berbagai project mulai dari landing page,
+              website portofolio, hingga aplikasi web interaktif. Setiap project
+              adalah kesempatan untuk belajar dan berkembang.
+            </p>
+
+            <h2>Minat 🎯</h2>
+            <p>
+              Saya tertarik dengan UI/UX design, front-end development, dan
+              teknologi web terkini. Saya percaya bahwa kombinasi desain yang
+              baik dan kode yang clean adalah kunci kesuksesan sebuah website.
+            </p>
+          </div>
+          <div class="skills">
+            <h2>Skill Utama</h2>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>HTML & CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Responsive Design</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>UI/UX Design</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Portofolio Saya. Dibuat dengan ❤️ menggunakan HTML, CSS,
+          dan JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

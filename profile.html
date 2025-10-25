@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Portofolio Saya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Portofolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="profile.html" class="active">Profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="training.html">Hasil Latihan</a></li>
+          <li>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+              🌙 Dark Mode
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Profile Content -->
+    <div class="page active">
+      <div class="container">
+        <h1 class="page-title">Profil Pribadi</h1>
+        <p class="page-subtitle">Informasi lengkap tentang saya</p>
+        <div class="profile-card">
+          <div class="profile-header">
+            <div class="profile-img">👤</div>
+            <h2>[Nama Lengkap Anda]</h2>
+          </div>
+          <div class="profile-info">
+            <div class="info-item">
+              <div class="info-label">📛 Nama Lengkap</div>
+              <div>[Nama Lengkap Anda]</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">🎂 Tanggal Lahir</div>
+              <div>01 Januari 2000</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">🎓 Pendidikan</div>
+              <div>S1 Teknik Informatika<br />Universitas XYZ</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">📍 Lokasi</div>
+              <div>Jakarta, Indonesia</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">🎮 Hobi</div>
+              <div>Coding, Design, Gaming, Traveling</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">📧 Email</div>
+              <div>email@example.com</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">📱 Telepon</div>
+              <div>+62 812-3456-7890</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">💼 Status</div>
+              <div>Available for Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Portofolio Saya. Dibuat dengan ❤️ menggunakan HTML, CSS,
+          dan JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

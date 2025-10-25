@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Portofolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="#" onclick="showPage('home')" class="active">Home</a>
+          </li>
+          <li><a href="#" onclick="showPage('about')">About</a></li>
+          <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+          <li><a href="#" onclick="showPage('profile')">Profile</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+          <li><a href="#" onclick="showPage('training')">Hasil Latihan</a></li>
+          <li>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+              🌙 Dark Mode
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+      <div class="container">
+        <div class="hero">
+          <div class="profile-img">👤</div>
+          <h1>Halo, Saya Candra Saputra</h1>
+          <p>
+            Seorang Web Developer yang passionate dalam menciptakan website
+            modern dan responsif. Selamat datang di portofolio saya!
+          </p>
+          <div class="btn-group">
+            <a href="#" class="btn" onclick="showPage('about')">Tentang Saya</a>
+            <a href="#" class="btn btn-outline" onclick="showPage('contact')"
+              >Hubungi Saya</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+      <div class="container">
+        <h1 class="page-title">Tentang Saya</h1>
+        <p class="page-subtitle">Kenali saya lebih dekat</p>
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Halo! 👋</h2>
+            <p>
+              Saya adalah seorang web developer yang bersemangat dalam
+              menciptakan pengalaman digital yang menarik dan fungsional. Dengan
+              pengalaman dalam HTML, CSS, dan JavaScript, saya selalu berusaha
+              untuk belajar teknologi baru dan meningkatkan skill saya.
+            </p>
+
+            <h2>Pengalaman 💼</h2>
+            <p>
+              Saya telah mengerjakan berbagai project mulai dari landing page,
+              website portofolio, hingga aplikasi web interaktif. Setiap project
+              adalah kesempatan untuk belajar dan berkembang.
+            </p>
+
+            <h2>Minat 🎯</h2>
+            <p>
+              Saya tertarik dengan UI/UX design, front-end development, dan
+              teknologi web terkini. Saya percaya bahwa kombinasi desain yang
+              baik dan kode yang clean adalah kunci kesuksesan sebuah website.
+            </p>
+          </div>
+          <div class="skills">
+            <h2>Skill Utama</h2>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>HTML & CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Responsive Design</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>UI/UX Design</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Page -->
+    <div id="gallery" class="page">
+      <div class="container">
+        <h1 class="page-title">Gallery</h1>
+        <p class="page-subtitle">Koleksi project dan karya saya</p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <div class="gallery-img">🌐</div>
+            <div class="gallery-info">
+              <h3>Website Perusahaan</h3>
+              <p>
+                Landing page modern untuk perusahaan startup dengan desain clean
+                dan professional.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">🎨</div>
+            <div class="gallery-info">
+              <h3>Portfolio Design</h3>
+              <p>
+                Desain portofolio kreatif dengan animasi dan interaksi yang
+                menarik.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">📱</div>
+            <div class="gallery-info">
+              <h3>Mobile App UI</h3>
+              <p>
+                User interface untuk aplikasi mobile dengan fokus pada user
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">🛒</div>
+            <div class="gallery-info">
+              <h3>E-Commerce</h3>
+              <p>
+                Website toko online dengan sistem cart dan checkout yang
+                user-friendly.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">📊</div>
+            <div class="gallery-info">
+              <h3>Dashboard Admin</h3>
+              <p>
+                Dashboard untuk mengelola data dengan visualisasi chart dan
+                tabel.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">✍️</div>
+            <div class="gallery-info">
+              <h3>Blog Platform</h3>
+              <p>Platform blog dengan fitur CRUD dan sistem komentar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profile" class="page">
+      <div class="container">
+        <h1 class="page-title">Profil Pribadi</h1>
+        <p class="page-subtitle">Informasi lengkap tentang saya</p>
+        <div class="profile-card">
+          <div class="profile-header">
+            <div class="profile-img">👤</div>
+            <h2>[Nama Lengkap Anda]</h2>
+          </div>
+          <div class="profile-info">
+            <div class="info-item">
+              <div class="info-label">📛 Nama Lengkap</div>
+              <div>[Nama Lengkap Anda]</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">🎂 Tanggal Lahir</div>
+              <div>01 Januari 2000</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">🎓 Pendidikan</div>
+              <div>S1 Teknik Informatika<br />Universitas XYZ</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">📍 Lokasi</div>
+              <div>Jakarta, Indonesia</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">🎮 Hobi</div>
+              <div>Coding, Design, Gaming, Traveling</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">📧 Email</div>
+              <div>email@example.com</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">📱 Telepon</div>
+              <div>+62 812-3456-7890</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">💼 Status</div>
+              <div>Available for Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+      <div class="container">
+        <h1 class="page-title">Hubungi Saya</h1>
+        <p class="page-subtitle">Mari terhubung dan berdiskusi</p>
+        <div class="contact-content">
+          <div class="contact-form">
+            <h2>Kirim Pesan</h2>
+            <form onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  placeholder="Masukkan nama Anda"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="email@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea
+                  id="message"
+                  required
+                  placeholder="Tulis pesan Anda di sini..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+          </div>
+          <div class="social-links">
+            <h3>Media Sosial</h3>
+            <a href="#" class="social-icon">
+              <div class="social-icon-img">📧</div>
+              <div>
+                <strong>Email</strong><br />
+                email@example.com
+              </div>
+            </a>
+            <a href="#" class="social-icon">
+              <div class="social-icon-img">💼</div>
+              <div>
+                <strong>LinkedIn</strong><br />
+                linkedin.com/in/username
+              </div>
+            </a>
+            <a href="#" class="social-icon">
+              <div class="social-icon-img">🐙</div>
+              <div>
+                <strong>GitHub</strong><br />
+                github.com/username
+              </div>
+            </a>
+            <a href="#" class="social-icon">
+              <div class="social-icon-img">📷</div>
+              <div>
+                <strong>Instagram</strong><br />
+                @username
+              </div>
+            </a>
+            <a href="#" class="social-icon">
+              <div class="social-icon-img">🐦</div>
+              <div>
+                <strong>Twitter</strong><br />
+                @username
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training Results Page -->
+    <div id="training" class="page">
+      <div class="container">
+        <h1 class="page-title">Hasil Latihan</h1>
+        <p class="page-subtitle">Dokumentasi perjalanan belajar coding saya</p>
+        <div class="training-grid">
+          <div class="training-card">
+            <h3>🎨 Latihan CSS Flexbox</h3>
+            <p>
+              Membuat layout responsive menggunakan CSS Flexbox dengan berbagai
+              macam use case.
+            </p>
+            <div class="training-tags">
+              <span class="tag">CSS</span>
+              <span class="tag">Flexbox</span>
+              <span class="tag">Layout</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              onclick="alert('Demo akan dibuka di tab baru')"
+              >Lihat Demo</a
+            >
+          </div>
+          <div class="training-card">
+            <h3>🎨 CSS Animations</h3>
+            <p>
+              Membuat berbagai macam animasi menarik menggunakan CSS animations
+              dan transitions.
+            </p>
+            <div class="training-tags">
+              <span class="tag">CSS</span>
+              <span class="tag">Animation</span>
+              <span class="tag">Effects</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              onclick="alert('Demo akan dibuka di tab baru')"
+              >Lihat Demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Portofolio Saya. Dibuat dengan ❤️ menggunakan HTML, CSS,
+          dan JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Page Navigation
+      function showPage(pageName) {
+        // Hide all pages
+        const pages = document.querySelectorAll(".page");
+        pages.forEach((page) => page.classList.remove("active"));
+
+        // Show selected page
+        document.getElementById(pageName).classList.add("active");
+
+        // Update active nav link
+        const navLinks = document.querySelectorAll(".nav-links a");
+        navLinks.forEach((link) => link.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Close mobile menu
+        document.getElementById("navLinks").classList.remove("active");
+
+        // Scroll to top
+        window.scrollTo(0, 0);
+      }
+
+      // Mobile Menu Toggle
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+      }
+
+      // Dark Mode Toggle
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        const btn = document.querySelector(".dark-mode-toggle");
+
+        if (document.body.classList.contains("dark-mode")) {
+          btn.textContent = "☀️ Light Mode";
+          localStorage.setItem("darkMode", "enabled");
+        } else {
+          btn.textContent = "🌙 Dark Mode";
+          localStorage.setItem("darkMode", "disabled");
+        }
+      }
+
+      // Check for saved dark mode preference
+      if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        document.querySelector(".dark-mode-toggle").textContent =
+          "☀️ Light Mode";
+      }
+
+      // Form Submit Handler
+      function handleSubmit(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        alert(
+          `Terima kasih ${name}!\n\nPesan Anda telah diterima:\n"${message}"\n\nKami akan menghubungi Anda di ${email} segera.`
+        );
+
+        // Reset form
+        event.target.reset();
+      }
+
+      // Smooth scroll for navigation
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animate skill bars on page load
+        const skillBars = document.querySelectorAll(".skill-progress");
+        setTimeout(() => {
+          skillBars.forEach((bar) => {
+            const width = bar.style.width;
+            bar.style.width = "0";
+            setTimeout(() => {
+              bar.style.width = width;
+            }, 100);
+          });
+        }, 500);
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        const nav = document.getElementById("navLinks");
+        const hamburger = document.querySelector(".hamburger");
+
+        if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
+          nav.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
+<!-- ">Lihat Demo</a>
+                </div>
+                <div class="training-card">
+                    <h3>⚡ JavaScript DOM Manipulation</h3>
+                    <p>Praktik manipulasi DOM untuk membuat interactive web elements seperti accordion, tabs, dan modal.</p>
+                    <div class="training-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">DOM</span>
+                        <span class="tag">Interactive</span>
+                    </div>
+                    <a href="#" class="btn" onclick="alert('Demo akan dibuka di tab baru')">Lihat Demo</a>
+                </div>
+                <div class="training-card">
+                    <h3>📱 Responsive Design</h3>
+                    <p>Membuat website yang responsive di berbagai ukuran layar menggunakan media queries.</p>
+                    <div class="training-tags">
+                        <span class="tag">CSS</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">Mobile</span>
+                    </div>
+                    <a href="#" class="btn" onclick="alert('Demo akan dibuka di tab baru')">Lihat Demo</a>
+                </div>
+                <div class="training-card">
+                    <h3>🎮 Mini Game JavaScript</h3>
+                    <p>Membuat mini game sederhana seperti Tic-Tac-Toe menggunakan vanilla JavaScript.</p>
+                    <div class="training-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Game</span>
+                        <span class="tag">Logic</span>
+                    </div>
+                    <a href="#" class="btn" onclick="alert('Demo akan dibuka di tab baru')">Lihat Demo</a>
+                </div>
+                <div class="training-card">
+                    <h3>📝 Form Validation</h3>
+                    <p>Implementasi validasi form dengan JavaScript untuk meningkatkan user experience.</p>
+                    <div class="training-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Form</span>
+                        <span class="tag">Validation</span>
+                    </div>
+                    <a href="#" class="btn" onclick="alert('Demo akan dibuka di tab baru')  ">Lihat Demo</a> -->

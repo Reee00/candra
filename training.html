@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasil Latihan - Portofolio Saya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Portofolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="training.html" class="active">Hasil Latihan</a></li>
+          <li>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+              🌙 Dark Mode
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Training Content -->
+    <div class="page active">
+      <div class="container">
+        <h1 class="page-title">Hasil Latihan</h1>
+        <p class="page-subtitle">Dokumentasi perjalanan belajar coding saya</p>
+        <div class="training-grid">
+          <div class="training-card">
+            <h3>🎨 Latihan CSS Flexbox</h3>
+            <p>
+              Membuat layout responsive menggunakan CSS Flexbox dengan berbagai
+              macam use case.
+            </p>
+            <div class="training-tags">
+              <span class="tag">CSS</span>
+              <span class="tag">Flexbox</span>
+              <span class="tag">Layout</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              onclick="alert('Demo akan dibuka di tab baru')"
+              >Lihat Demo</a
+            >
+          </div>
+          <div class="training-card">
+            <h3>🎨 CSS Animations</h3>
+            <p>
+              Membuat berbagai macam animasi menarik menggunakan CSS animations
+              dan transitions.
+            </p>
+            <div class="training-tags">
+              <span class="tag">CSS</span>
+              <span class="tag">Animation</span>
+              <span class="tag">Effects</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              onclick="alert('Demo akan dibuka di tab baru')"
+              >Lihat Demo</a
+            >
+          </div>
+          <div class="training-card">
+            <h3>⚡ JavaScript DOM Manipulation</h3>
+            <p>
+              Praktik manipulasi DOM untuk membuat interactive web elements
+              seperti accordion, tabs, dan modal.
+            </p>
+            <div class="training-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">DOM</span>
+              <span class="tag">Interactive</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              onclick="alert('Demo akan dibuka di tab baru')"
+              >Lihat Demo</a
+            >
+          </div>
+          <div class="training-card">
+            <h3>📱 Responsive Design</h3>
+            <p>
+              Membuat website yang responsive di berbagai ukuran layar
+              menggunakan media queries.
+            </p>
+            <div class="training-tags">
+              <span class="tag">CSS</span>
+              <span class="tag">Responsive</span>
+              <span class="tag">Mobile</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              onclick="alert('Demo akan dibuka di tab baru')"
+              >Lihat Demo</a
+            >
+          </div>
+          <div class="training-card">
+            <h3>🎮 Mini Game JavaScript</h3>
+            <p>
+              Membuat mini game sederhana seperti Tic-Tac-Toe menggunakan
+              vanilla JavaScript.
+            </p>
+            <div class="training-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Game</span>
+              <span class="tag">Logic</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              onclick="alert('Demo akan dibuka di tab baru')"
+              >Lihat Demo</a
+            >
+          </div>
+          <div class="training-card">
+            <h3>📝 Form Validation</h3>
+            <p>
+              Implementasi validasi form dengan JavaScript untuk meningkatkan
+              user experience.
+            </p>
+            <div class="training-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Form</span>
+              <span class="tag">Validation</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              onclick="alert('Demo akan dibuka di tab baru')"
+              >Lihat Demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Portofolio Saya. Dibuat dengan ❤️ menggunakan HTML, CSS,
+          dan JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Portofolio Saya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Portofolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="training.html">Hasil Latihan</a></li>
+          <li>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+              🌙 Dark Mode
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Gallery Content -->
+    <div class="page active">
+      <div class="container">
+        <h1 class="page-title">Gallery</h1>
+        <p class="page-subtitle">Koleksi project dan karya saya</p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <div class="gallery-img">🌐</div>
+            <div class="gallery-info">
+              <h3>Website Perusahaan</h3>
+              <p>
+                Landing page modern untuk perusahaan startup dengan desain clean
+                dan professional.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">🎨</div>
+            <div class="gallery-info">
+              <h3>Portfolio Design</h3>
+              <p>
+                Desain portofolio kreatif dengan animasi dan interaksi yang
+                menarik.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">📱</div>
+            <div class="gallery-info">
+              <h3>Mobile App UI</h3>
+              <p>
+                User interface untuk aplikasi mobile dengan fokus pada user
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">🛒</div>
+            <div class="gallery-info">
+              <h3>E-Commerce</h3>
+              <p>
+                Website toko online dengan sistem cart dan checkout yang
+                user-friendly.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">📊</div>
+            <div class="gallery-info">
+              <h3>Dashboard Admin</h3>
+              <p>
+                Dashboard untuk mengelola data dengan visualisasi chart dan
+                tabel.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img">✍️</div>
+            <div class="gallery-info">
+              <h3>Blog Platform</h3>
+              <p>Platform blog dengan fitur CRUD dan sistem komentar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Portofolio Saya. Dibuat dengan ❤️ menggunakan HTML, CSS,
+          dan JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
